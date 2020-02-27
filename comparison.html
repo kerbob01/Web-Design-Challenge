@@ -12,9 +12,6 @@
 
     <meta charset="UTF-8">
     <title>comparison</title>
-
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  -->
   
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
@@ -22,46 +19,46 @@
 </head>
 
 <body>
-      <div id="first_line_color">
-        <div class="row">   
-                <!-- <div class="form-inline">   -->
-                <div class="col-md-6">    
-
-                        <div class="first_line" >
-                            <div class="div1"><h1>Latitude</h1> </div>
-                        </div>    
-                </div>  
-                
-               <div class="col-md-2">     
-                    <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
-                        <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            plot
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="Temperature.html">Max Temperature</a>
-                            <a class="dropdown-item" href="Humidity.html">Humidity</a>
-                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                            <a class="dropdown-item" href="wind-speed.html">Wind-speed</a>
-                        </div>
-                        </div>
-                </div>  
-
-                <div class="col-md-2">  
-                    <form>
-                       <input class="MyButton1" type="button" value="Comparison" onclick="window.location.href='comparison.html'" />       
-                    </form>
-                </div> 
-
-                <div class="col-md-2">
-                      <form>
-                            <input class="MyButton2" type="button" value="data" onclick="window.location.href='weather_df.html'" />       
-                      </form>
-    <!-- <button type="button" href="data.html"> <a class="dropdown-item" href="https://www.youtube.com">Data</a> </button> --> 
+     <!-- Header bar start       -->
+    <div id="first_line_color">
+        <div class="row">
+            <div class="d-flex flex-column">
+                <div class="first_line" class="p-2"  onclick="window.location.href='index.html'" style="cursor:pointer">
+                    <h1>Latitude</h1>
                 </div>
+            </div>
         </div>
-<!-- </div> -->
-     </div>
+        <div class="d-flex flex-row-reverse">
+            <div class="p-1">
+                <form>
+                    <input class="MyButton1" type="button" value="Data" style="cursor:pointer"
+                        onclick="window.location.href='weather_df.html'" />
+                </form>
+            </div>
+
+            <div class="p-1">
+                <form>
+                    <input class="MyButton2" type="button" value="Comparison" style="cursor:pointer"
+                        onclick="window.location.href='comparison.html'" />
+                </form>
+            </div>
+            <div class="p-1">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        plot
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="Temperature.html">Max Temperature</a>
+                        <a class="dropdown-item" href="Humidity.html">Humidity</a>
+                        <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                        <a class="dropdown-item" href="wind-speed.html">Wind-speed</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header bar end -->
 <br>
 
            
@@ -78,29 +75,29 @@
                                 
                             <a href="Temperature.html"><figure class="comparison_figure" style="margin:20px;margin-left: 20%">
                                 <figcaption style="text-align: center;font-size: 150%">vs. Max Temperature</figcaption>
-                                <img src="latitude_Max-Temperature.png" alt="latitude_Max-Temperature" >
+                                <img src="Resources\assets\images\Fig1.png" alt="latitude_Max-Temperature" >
                             </figure></a>    
                     </div>
 
 
                      <div class="col-sm-6 col-md-6">
-                           <a href="Temperature.html"><figure class="comparison_figure" style="margin:20px;margin-left: 20%">
+                           <a href="Cloudiness.html"><figure class="comparison_figure" style="margin:20px;margin-left: 20%">
                             <figcaption style="text-align: center;font-size: 150%">vs. Cloudiness</figcaption>
-                           <img src="latitude_Cloudiness(mph).png" alt="latitude_Cloudiness" >
+                           <img src="Resources\assets\images\Fig3.png" alt="latitude_Cloudiness" >
                                   </figure></a>
                     </div>
             </div>
             <div class="row">
                     <div class="col-sm-6 col-md-6">
-                           <a href="Temperature.html"><figure class="comparison_figure" style="margin-bottom:30%;margin-left: 20%">
+                           <a href="Humidity.html"><figure class="comparison_figure" style="margin-bottom:30%;margin-left: 20%">
                             <figcaption style="text-align: center;font-size: 150%">vs. Humidity</figcaption>
-                           <img src="latitude_humidity.png" alt="latitude_humidity" >
+                           <img src="Resources\assets\images\Fig2.png" alt="latitude_humidity" >
                                 </figure></a>
                     </div>
                     <div class="col-sm-6 col-md-6">
-                            <a href="Temperature.html"><figure class="comparison_figure" style="margin-bottom:30%;margin-left: 20%;">
+                            <a href="Wind-speed.html"><figure class="comparison_figure" style="margin-bottom:30%;margin-left: 20%;">
                               <figcaption style="text-align: center;font-size: 150%">vs. Wind-speed</figcaption>
-                                <img src="latitude_wind-speed(mph).png" alt="latitude_wind-speed" >
+                                <img src="Resources\assets\images\Fig4.png" alt="latitude_wind-speed" >
                              </figure></a>
                     </div>
             </div>

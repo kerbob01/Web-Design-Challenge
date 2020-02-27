@@ -21,11 +21,11 @@
 </head>
 
 <body>
-    <!-- Header start -->
+    <!-- Header bar start       -->
     <div id="first_line_color">
         <div class="row">
             <div class="d-flex flex-column">
-                <div class="first_line" class="p-2">
+                <div class="first_line" class="p-2"  onclick="window.location.href='index.html'" style="cursor:pointer">
                     <h1>Latitude</h1>
                 </div>
             </div>
@@ -33,13 +33,14 @@
         <div class="d-flex flex-row-reverse">
             <div class="p-1">
                 <form>
-                    <input class="MyButton1" type="button" value="Data"
+                    <input class="MyButton1" type="button" value="Data" style="cursor:pointer"
                         onclick="window.location.href='weather_df.html'" />
                 </form>
             </div>
+
             <div class="p-1">
                 <form>
-                    <input class="MyButton2" type="button" value="Comparison"
+                    <input class="MyButton2" type="button" value="Comparison" style="cursor:pointer"
                         onclick="window.location.href='comparison.html'" />
                 </form>
             </div>
@@ -59,7 +60,7 @@
             </div>
         </div>
     </div>
-    <!-- Header end -->
+    <!-- Header bar end -->
     <br>
     <!-- Summary Screen Start   -->
     <header>
@@ -76,7 +77,8 @@
                 <figure id="main1_figure">
                     <img src="Resources\assets\images\Fig1.png" alt="latitude_Max-Temperature"
                         style="width:100%;height:100%">
-                    <figcaption>TODO</figcaption>
+                    <figcaption>The above plot shows that Temperature is warmer closer to 0 Latitude the city is. 
+                        It also shows that as of the time data was taken it was summertime in the Southern Hemisphere where the Temps are warmer.</figcaption>
                 </figure>
             </div>
 
